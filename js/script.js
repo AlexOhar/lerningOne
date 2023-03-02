@@ -1,20 +1,3 @@
-// again:
-// for (let i = 0; i < 2; i++) {
-// 	console.log(i);
-// 	let nameFilm = prompt('Один из последних просмотренных фильмов?', '');
-// 	if (nameFilm === '' || nameFilm == null || nameFilm.length > 10) {
-// 		i = -1;
-// 		continue again;
-// 	}
-// 	console.log(i);
-// 	let evaluation = prompt('на сколько оцените его?', '');
-// 	if (evaluation === '' || evaluation == null) {
-// 		i = -1;
-// 		continue again;
-// 	}
-// 	personalMovieDB.movies[nameFilm] = evaluation; 
-// }
-
 'use strict';
 
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
