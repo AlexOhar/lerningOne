@@ -21,8 +21,8 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
 	for (let i = 0; i < 2; i++) {
-		let nameFilm = prompt('Один из последних просмотренных фильмов?', ''),
-			evaluation = prompt('на сколько оцените его?', '');
+		let nameFilm = prompt('Один из последних просмотренных фильмов?', '').trim(),
+			evaluation = prompt('на сколько оцените его?', '').trim();
 		if (nameFilm != '' && evaluation != '' && evaluation != null && nameFilm != null && nameFilm.length < 50) {
 			personalMovieDB.movies[nameFilm] = evaluation; 
 			console.log('Done');
